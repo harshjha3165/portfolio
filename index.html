@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Harsh Kumar Jha · Portfolio</title>
+<meta name="description" content="Harsh Kumar Jha, B.Tech Artificial Intelligence student at IIT Gandhinagar. ML research, competitive programming, and software projects." />
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="noise"></div>
+
+<header class="topbar">
+  <a href="#top" class="logo">HKJ</a>
+  <nav class="nav">
+    <a href="#about">About</a>
+    <a href="#experience">Research</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+    <svg id="iconSun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+    <svg id="iconMoon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+  </button>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <img src="photo.jpg" alt="Harsh Kumar Jha" class="hero-photo" width="180" height="180" />
+    <p class="eyebrow">B.Tech in Artificial Intelligence · IIT Gandhinagar</p>
+    <h1>Harsh Kumar Jha</h1>
+    <div class="hero-links">
+      <a href="mailto:harshjha24110130@gmail.com" class="btn btn-primary">Say hello</a>
+      <a href="https://github.com/harshjha3165" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/harsh-jha-37a0bb32a/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://codeforces.com/profile/NormieUncle" target="_blank" rel="noopener">Codeforces</a>
+      <a href="https://www.codechef.com/users/normieuncle" target="_blank" rel="noopener">CodeChef</a>
+      <a href="resume_harsh.pdf" target="_blank" rel="noopener">Resume ↓</a>
+    </div>
+    <a class="banner" href="mailto:harshjha24110130@gmail.com">
+      <span class="banner-dot"></span>
+      Co-founding <strong>Project Immortals</strong> with Prof. Jaison Manjaly: preserving everyone's digital presence, along with their thought process.
+      <span class="banner-tag">v0.0 · launching soon</span>
+    </a>
+  </section>
+
+  <section id="about" class="section">
+    <h2 class="section-title"><span class="num">01</span> About</h2>
+    <div class="section-body">
+      <p>
+        I'm Harsh, born and brought up in New Delhi. I've always been fascinated by how
+        things work, which eventually pulled me toward computer science, and I'm now
+        studying Artificial Intelligence at IIT Gandhinagar.
+      </p>
+      <p>
+        I like maths a lot, and machine learning even more. Right now I'm strengthening
+        core CS fundamentals like operating systems, while also exploring agentic AI
+        alongside some ongoing voice and facial research. I'm always open to
+        discuss and contribute on anything interesting.
+      </p>
+      <p>
+        Outside academics, I love talking to people and hearing different perspectives,
+        I like to travel, and I enjoy playing games, sometimes mimicking people along
+        the way.
+      </p>
+    </div>
+  </section>
+
+  <section id="experience" class="section">
+    <h2 class="section-title"><span class="num">02</span> Research Experience</h2>
+    <div class="section-body">
+
+      <article class="entry">
+        <div class="entry-head">
+          <h3>Reimagining Point Cloud Denoising in Latent Space</h3>
+          <span class="entry-date">Aug '25 – Dec '25</span>
+        </div>
+        <p class="entry-meta">Advisor: Prof. Shanmuganathan Raman, Head of CSE &amp; EE, IIT Gandhinagar · Diffusion Models · Transformer-based Representation Learning · 3D Point Cloud Processing</p>
+        <ul>
+          <li>Designed and implemented an end-to-end latent-space diffusion framework for 3D point cloud denoising, centered on autoencoders to preserve global shape structure under synthetic noise.</li>
+          <li>Proposed hierarchical transformer-based latent encoders with timestep conditioning, enabling diffusion over multi-scale geometric representations beyond raw coordinate-space diffusion.</li>
+          <li>Achieved state-of-the-art denoising performance, improving Chamfer Distance by up to 2× over strong diffusion baselines (CD ×10⁻⁴: 1.23 vs 2.28 at noise level 1% on 10k-point clouds), validated via controlled ablations.</li>
+        </ul>
+        <a class="entry-link" href="https://github.com/harshjha3165/point-cloud-denoising" target="_blank" rel="noopener">View on GitHub →</a>
+        <figure class="poster">
+          <a href="poster-point-cloud.jpg" target="_blank" rel="noopener">
+            <img src="poster-point-cloud.jpg" alt="Research poster: Reimagining Point Cloud Denoising in Latent Space" loading="lazy" />
+          </a>
+          <figcaption>Project Course CS299 poster. Click to view full resolution</figcaption>
+        </figure>
+      </article>
+
+      <article class="entry">
+        <div class="entry-head">
+          <h3>Beyond GANSpace: Interpretable Control in GAN Latent Spaces</h3>
+          <span class="entry-date">Jan '26 – Apr '26</span>
+        </div>
+        <p class="entry-meta">StyleGAN2 · GAN · PCA · CLIP · PyTorch</p>
+        <ul>
+          <li>Reproduced GANSpace on StyleGAN2-FFHQ, applying PCA over the W-space latents of a pretrained GAN to extract interpretable edit directions, ranked via CLIP contrastive scoring against target attributes.</li>
+          <li>Showed that PCA-discovered directions remain semantically entangled (the top "beard" axis behaved as a gender axis), tracing this to attribute correlations in the training data.</li>
+        </ul>
+        <div class="poster-row">
+          <figure class="poster">
+            <a href="poster-ganspace.jpg" target="_blank" rel="noopener">
+              <img src="poster-ganspace.jpg" alt="Research poster: Beyond GANSpace, Enhancing Interpretable Control in GAN Latent Spaces" loading="lazy" />
+            </a>
+            <figcaption>Poster, presented at IIT Gandhinagar. Click to view full resolution</figcaption>
+          </figure>
+          <figure class="poster">
+            <img src="presenting-ganspace.jpg" alt="Harsh Kumar Jha presenting the GANSpace poster" loading="lazy" />
+            <figcaption>Presenting the poster on campus</figcaption>
+          </figure>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <h2 class="section-title"><span class="num">03</span> Selected Projects</h2>
+    <div class="section-body">
+
+      <article class="entry">
+        <div class="entry-head">
+          <h3>Semantic Search Engine: Dense Retrieval &amp; Hybrid Ranking</h3>
+          <span class="entry-date">Jan '26 – Apr '26</span>
+        </div>
+        <p class="entry-meta">Advisor: Prof. Anirban Dasgupta · Python · C++ · BERT · FAISS</p>
+        <ul>
+          <li>Benchmarked 7 retrieval strategies (BM25, Word2Vec, BERT bi-encoder, cross-encoder reranking) on SciFact (BEIR); found that hybrid BM25+BERT score fusion achieved higher precision (0.0923 vs 0.0917) and recall than cross-encoder reranking at 8× lower latency (31ms vs 240ms).</li>
+          <li>Implemented a custom HNSW approximate nearest-neighbour index from scratch in C++ with pybind11 bindings, supporting inner-product metric for cosine similarity and binary graph serialisation, achieving 98.2% top-10 result overlap with FAISS exhaustive search.</li>
+        </ul>
+        <a class="entry-link" href="https://github.com/harshjha3165/Semantic-Search-Engine" target="_blank" rel="noopener">View on GitHub →</a>
+      </article>
+
+      <p class="more-projects">
+        Also:
+        <a href="https://github.com/harshjha3165/Low-Latency-Limit-Order-Book-Matching-Engine" target="_blank" rel="noopener">Limit Order Book Matching Engine</a> ·
+        <a href="https://github.com/harshjha3165/ES335-DecisionTrees" target="_blank" rel="noopener">Human Activity Recognition</a> ·
+        <a href="https://github.com/Ramji-Purwar/CS-203-Assignment-4/" target="_blank" rel="noopener">Dynamic House Rent Prediction</a>
+        (<a href="https://huggingface.co/spaces/Ramji-Purwar/UrbanNest-Predictor" target="_blank" rel="noopener">live demo</a>)
+      </p>
+
+    </div>
+  </section>
+
+  <section id="education" class="section">
+    <h2 class="section-title"><span class="num">04</span> Education &amp; Achievements</h2>
+    <div class="section-body">
+
+      <article class="entry">
+        <div class="entry-head">
+          <h3>Indian Institute of Technology Gandhinagar</h3>
+          <span class="entry-date">2024 – Present</span>
+        </div>
+        <p class="entry-meta">B.Tech. in Artificial Intelligence · CPI: 8.51</p>
+      </article>
+
+      <article class="entry">
+        <div class="entry-head">
+          <h3>New Green Field School</h3>
+          <span class="entry-date">2021 – 2023</span>
+        </div>
+        <p class="entry-meta">Class XII (Physics, Chemistry, Maths) · 87.4%</p>
+      </article>
+
+      <article class="entry">
+        <div class="entry-head">
+          <h3>Cambridge International School</h3>
+          <span class="entry-date">2021</span>
+        </div>
+        <p class="entry-meta">Class X · 93.5%</p>
+      </article>
+
+      <ul class="achievements">
+        <li><strong>Competitive Programming:</strong> Expert on <a href="https://codeforces.com/profile/NormieUncle" target="_blank" rel="noopener">Codeforces</a> (1609 rating) and 3★ on <a href="https://www.codechef.com/users/normieuncle" target="_blank" rel="noopener">CodeChef</a> (1603 rating), strong algorithmic problem-solving.</li>
+        <li><strong>Selected for Amazon ML Summer School 2026:</strong> among the top ~2% (3,000 from 1.5 lakh+ applicants) for an advanced machine learning program conducted by Amazon data scientists.</li>
+        <li><strong>Selected as a BIIC (Barclays) Mentee</strong> for the June–July 2026 mentorship program through a competitive selection process.</li>
+        <li><strong>Department change</strong> from Civil Engineering to Artificial Intelligence at IIT Gandhinagar, awarded on merit and performance.</li>
+        <li><strong>Department Rank 1</strong> in First Semester at IIT Gandhinagar.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="coursework" class="section">
+    <h2 class="section-title"><span class="num">05</span> Relevant Coursework</h2>
+    <div class="section-body">
+      <p>Machine Learning, Mathematical Foundations of AI, Probability &amp; Statistics, Linear Algebra, Introduction to Data Science, Data Visualization, Data Structures &amp; Algorithms.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title"><span class="num">06</span> Skills</h2>
+    <div class="section-body">
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h4>Languages &amp; Fundamentals</h4>
+          <p>C++, Python, Data Structures &amp; Algorithms, OOP</p>
+        </div>
+        <div class="skill-group">
+          <h4>ML / Deep Learning</h4>
+          <p>Machine Learning, Deep Learning, Transformers, Attention Mechanisms, Diffusion Models, GANs</p>
+        </div>
+        <div class="skill-group">
+          <h4>Generative &amp; 3D</h4>
+          <p>CLIP, Gaussian Splatting, StyleGAN2, Text-to-Speech (TTS)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact-section">
+    <h2 class="section-title"><span class="num">07</span> Contact</h2>
+    <div class="section-body">
+      <p>I'd love to hear from you. Reach out.</p>
+      <div class="contact-links">
+        <a href="mailto:harshjha24110130@gmail.com">harshjha24110130@gmail.com</a>
+        <a href="tel:+918368805074">+91 8368805074</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>Harsh Kumar Jha</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
